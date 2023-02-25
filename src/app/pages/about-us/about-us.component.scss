@@ -1,0 +1,272 @@
+.main {
+    height: 90vh;
+    background-color: #009A74;
+    .content {
+        padding-top: 8%;
+        background: url(https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/Fondo-nuevo-mas-margen.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        height: 100%;
+        max-height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .text {
+            padding-left: 10%;
+            text-align: left;
+            font-size: 12px;
+            font-size: 5px;
+            color: #ffffff;
+            width: 60%;
+            h3 {
+                color: #ffffff;
+                opacity: 1;
+                font-size: 1.3rem;
+                text-align: left;
+            }
+            span {
+                font-size: 1.7rem;
+                line-height: 33px;
+            }
+
+            // h1 {
+            //     font-size: 1.7rem;
+            // }
+        }
+        .image {
+            width: 40%;
+            img {
+                width: 80%;
+            }
+        }
+    }
+      
+}
+
+.slides {
+    
+    background-color: #ffffff;
+    margin-bottom: 15vh;
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 100%;
+        height: 80vh;
+        background-color: #ffffff;
+        .background {
+            // position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+        }
+        .flex-container {
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            .logo {
+                text-align: center;
+                width: 50%;
+                img {
+                    width: auto !important;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .text {
+                width: 50%;
+                padding-right: 10%;
+                p {
+                    font-family: 'Google Sans';
+                    font-size: 1.2rem;
+                    color: #000000;
+                }
+                .know {
+                    float: right;
+                    margin-right: 70px;
+                    color: var(--verde3);
+                    border: 1px solid var(--verde3);
+                }
+            }
+            .next {
+                position: absolute;
+                bottom: 25px;
+                right: 40px;
+                width: 60px;
+                height: 100px;
+                cursor: pointer;
+            }
+            .next-two {
+                position: absolute;
+                bottom: 25px;
+                right: 60px;
+                width: 60px;
+                height: 100px;
+                cursor: pointer;
+            }
+            .prev {
+                position: absolute;
+                bottom: 25px;
+                left: 40px;
+                width: 60px;
+                height: 100px;
+                cursor: pointer;
+            }
+            .prev-two {
+                position: absolute;
+                bottom: 25px;
+                left: 60px;
+                width: 60px;
+                height: 100px;
+                cursor: pointer;
+            }
+        }
+    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+      
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+        height: auto;
+        // min-height: 700px;
+        background-color: #009A74;
+        .content {
+            padding-top: 25%;
+            background: url(https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/hojas-verdes.png) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;    
+            height: 100%;
+            max-height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            .text {
+                padding-left: 10%;
+                padding-right: 10%;
+                text-align: left;
+                font-size: 12px;
+                font-size: 5px;
+                color: #ffffff;
+                width: 100%;
+                h3 {
+                    color: #ffffff;
+                    opacity: 1;
+                    font-size: 1.1rem;
+                    text-align: left;
+                }
+                h1 {
+                    font-size: 1.3rem;
+                }
+            }
+            .image {
+                width: 100%;
+                text-align: center;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+          
+    }
+    .slides {
+        background-color: #ffffff;
+        margin-bottom: 5vh;
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 100%;
+            height: 370px;
+            min-height: 370px;
+            background-color: #ffffff;
+            .background {
+                width: 100%;
+                height: 100%;
+                opacity: 0.1;
+            }
+            .flex-container {
+                position: absolute;
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                .logo {
+                    text-align: center;
+                    width: 100%;
+                    margin-top: 50px;
+                    img {
+                        width: 60% !important;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .text {
+                    width: 100%;
+                    padding-right: 10%;
+                    padding-left: 20%;
+                    p {
+                        font-family: 'Google Sans';
+                        font-size: 0.8rem;
+                        color: #000000;
+                        margin-left: 10px;
+                    }
+                    .know {
+                        float: right;
+                        margin-right: 70px;
+                        color: var(--verde3) !important;
+                        border: 1px solid var(--verde3);
+                        padding: 3px 12px;
+                    }
+                }
+                .next {
+                    position: absolute;
+                    bottom: 18px;
+                    right: 10px;
+                    width: 25px;
+                    height: 45px;
+                }
+                .next-two {
+                    position: absolute;
+                    bottom: 18px;
+                    right: 30px;
+                    width: 25px;
+                    height: 45px;
+                }
+                .prev {
+                    position: absolute;
+                    bottom: 18px;
+                    left: 10px;
+                    width: 25px;
+                    height: 45px;
+                }
+                .prev-two {
+                    position: absolute;
+                    bottom: 18px;
+                    left: 30px;
+                    width: 25px;
+                    height: 45px;
+                }
+            }
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    }
+}

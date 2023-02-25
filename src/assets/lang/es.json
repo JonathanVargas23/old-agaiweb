@@ -1,0 +1,238 @@
+{
+  "header": {
+    "1": "Inicio",
+    "2": "¿Quiénes Somos?",
+    "3": "Soluciones",
+    "4": "Noticias",
+    "5": "Soporte",
+    "6": "Ingresar",
+    "7": "Blog"
+  },
+  "home": {
+    "main": {
+      "title": "Mejor información, mejores decisiones en el agro.",
+      "description": "AgrodatAi es una plataforma digital que ofrece información y transfiere conocimiento  a los actores de la cadena agro, para que tomen mejores decisiones, y propicia conexiones comerciales entre ellos. AgrodatAi  apunta a fortalecer la competitividad y rentabilidad del sector agropecuario.",
+      "button": "Ingresa aquí",
+      "buttonRegister": "Regístrate ahora"
+    },
+    "banner": {
+      "subtext": "Desliza y conoce más"
+    },
+    "mobile": {
+      "title": "AgrodatAi móvil",
+      "subtitle1": "En la palma de tu mano",
+      "descripcion1": "Información actualizada en tiempo real y disponible al alcance de tu mano.",
+      "subtitle2": "Datos del sector Agro",
+      "descripcion2": "Recomendaciones y datos para tomar mejores decisiones y mejorar las prácticas agrícolas y pecuarias.",
+      "subtitle3": " La mejor experiencia",
+      "descripcion3": "Una interfaz diseñada para todos los actores de la cadena agro.",
+      "button": "Descarga la aplicación"
+    },
+    "slides": {
+      "more": "Desliza y conoce más",
+      "section1": {
+        "item": "01",
+        "title": "Plataforma dinámica",
+        "description": "Dirigida a productores agropecuarios, transformadores, comercializadores, proveedores de servicios, insumos, maquinaría y equipos, gremios, entidades financieras , inversionistas, entidades de gobierno, profesionales y centros de investigación."
+      },
+      "section2": {
+        "item": "02",
+        "title": "Mejor opción de venta de los productos agropecuarios",
+        "description": "Optimiza el precio de venta de los productos agropecuarios de acuerdo con su ubicación y su costo de transporte."
+      }
+    },
+    "allies": {
+      "title": "Nuestos aliados"
+    }
+  },
+  "about": {
+    "main": {
+      "title": "¿Cómo surgió AgrodatAi?",
+      "description": "AgrodatAi es un spin off de Servinformación y SFA CEBAR, creada con el objetivo de desarrollar una plataforma digital para  las cadenas agro colombianas.",
+      "slogan": "Mejor información, mejores decisiones en el agro."
+    },
+    "servinformacion": {
+      "description": "Servinformación es una empresa fundada en 1999, especializada en el diseño sistemas de información geográfica, soluciones SIG en movilidad, recolección de información y diseño metodológicos de procesos de recolección de información."
+    },
+    "CEBAR": {
+      "description": "SFA CEBAR es una compañía fundada en 1999, con experiencia en soluciones financieras, diseño y estructuración de proyectos, gestión de negocios y gestión de riesgos, para las cadenas agropecuarias."
+    },
+    "more": "Conoce más"
+  },
+  "news": {
+    "main": {
+      "title": "Noticias del agro",
+      "description": "Mantente al tanto de todo lo que ocurre en el sector agropecuario.",
+      "button": "Cargar más",
+      "button-loading": "Cargando..."
+    }
+  },
+  "solutions": {
+    "main": {
+      "title": "Soluciones para el agro",
+      "description": "Enfocadas en los productos agrícolas y pecuarios. Además tenemos en cuenta la ubicación geográfica y las necesidades de tu negocio."
+    },
+    "skills": {
+      "title1": "Inteligencia artificial",
+      "title2": "Internet de las cosas para las cadenas agro",
+      "title3": "Mejores prácticas agropecuarias",
+      "title4": "Bases de datos públicas, privadas y propias",
+      "title5": "Identificación del potencial de mercado",
+      "title6": "Consulta en tiempo real y móvil"
+    },
+    "solutions": {
+      "solutions1": "Inteligencia Artificial",
+      "description1": "Aplicamos inteligencia artificial para realizar pronósticos de precios de productos agropecuarios, recomendaciones de siembra, notificaciones y alertas.",
+      "solutions2": "Internet de las cosas para cadenas agro",
+      "description2": "Soluciones de precisión adecuadas a las necesidades de tu agronegocio.",
+      "solutions3": "Mejores prácticas agropecuarias",
+      "description3": "Recomendaciones de mejores prácticas agrícolas y pecuarias.",
+      "solutions4": "Bases de datos públicas, privadas y propias",
+      "description4": "Ordenamiento, procesamiento, focalización e interoperación de las bases de información agropecuaria.",
+      "solutions5": "Potencial de mercado",
+      "description5": "Información de oferta y demanda de productos agrícolas y pecuarios, insumos, tecnología, crédito y seguro agropecuario.",
+      "solutions6": " Consulta en tiempo real y móvil",
+      "description6": "Información actualizada en tiempo real y disponible para consulta offline a través de mensajes de texto y servicios de mensajería instantánea."
+    }
+  },
+  "contact": {
+    "info": {
+      "title": "¿Quieres conocer más?",
+      "description": "Ingresa y regístrate en nuestra plataforma y conoce todos los beneficios e información que tenemos para ti.",
+      "button": "Regístrate ahora"
+    },
+    "second": {
+      "question_register": "¿Eres productor agropecuario?",
+      "title": "¿Quieres conocer más?",
+      "description1": "Si necesitas atención personalizada, escríbenos y con gusto te contactaremos.",
+      "description2": "Ingresa y regístrate en nuestra plataforma y conoce todos los beneficios e información que tenemos para ti.",
+      "button": "Regístrate ahora",
+      "buttonRegister": "Regístrate Gratis"
+    },
+    "form": {
+      "title": "Contáctanos",
+      "description": "Si necesitas atención personalizada, escríbenos y con gusto te contactaremos.",
+      "placeholderName": "Nombre",
+      "validator1": "El nombre es requerido*",
+      "placeholderEmail": "Correo",
+      "validator2": "El email es requerido*",
+      "validator3": "El email no es válido*",
+      "placeholderMessage": "Mensaje",
+      "validator4": " El mensaje es requerido*",
+      "button": "Enviar",
+      "button-sending": "Enviando...",
+      "message1": "Mensaje enviado correctamente.",
+      "message2": "No se pudo enviar el mensaje"
+    }
+  },
+  "blog": {
+    "main": {
+      "title": "Blog AgrodatAi",
+      "description": "¡Entérate de las últimas novedades del sector agro!"
+    },
+    "seccions": {
+      "one": {
+        "title": "Publicaciones Destacadas",
+        "sliderOne": {
+          "title": "¿La lluvia puede beneficiar algunos cultivos en Colombia?"
+        },
+        "sliderTwo": {
+          "title": "Exportaciones agropecuarios tocaron cifras record en 2021, tras crecimiento de 19.9%"
+        }
+      },
+      "two": {
+        "primaryTitle": "Publicaciones",
+        "suggestion": {
+          "cardOne": {
+            "textOne": "Paute con nosotros",
+            "textTwo": "Pregunte por nuestros planes"
+          },
+          "cardTwo": {
+            "textOne": "Una app para el sector agropecuario",
+            "textTwo": "Descargar"
+          }
+        },
+        "previousLabel":"Ant",
+        "nextLabel":"Sig"
+      },
+      "three": {
+        "textOne": "Suscríbete a nuestro blog",
+        "textTwo": "Subscribirme",
+        "placeholderEmail": "Correo electrónico",
+        "errorEmail" : "Correo electrónico inválido",
+        "existEmail" : "El correo electrónico ya se encuentra registrado",
+        "sucessEmail" : "Suscripción exitosa!"
+      }
+    },
+    "slides": {
+      "more": "Learn more",
+      "section1": {
+        "item": "01",
+        "title": "Dynamic Platform",
+        "description": "Our platform aims to support farmers , industries, traders,  supply chain companies, banks, insurance companies , investors, government, professionals, and research centers."
+      },
+      "section2": {
+        "item": "02",
+        "title": "The best option for the sale of agricultural products",
+        "description": "Optimizes the sale price of agricultural products according to their location and their transportation cost."
+      }
+    },
+    "viewBlog": {
+      "section1":{
+        "title": "¡Te invitamos a compartir este artículo!"
+
+      },
+      "section2":{
+        "title": "También te podría interesar:"
+      },
+      "section3":{
+        "slider1": {
+          "text1": "Mantente informado con Don Tulio",
+          "text2": "tu asesor agropecuario virtual",
+          "text3": "Chatear con  Don Tulio"
+        },
+        "slider2": {
+          "text1": "Descarga nuestra app y regístrate",
+          "text2": "GRATIS COMO PRODUCTOR"
+        }
+      }
+    }
+  },
+  "support": {
+    "main": {
+      "title": "¿Necesitas ayuda? Contáctanos",
+      "subtitle": "Llámanos o escríbenos y con gusto te atenderemos.",
+      "channels": {
+        "phone": "Canal telefónico:",
+        "phone-number": "(+57) 256 2030 Ext 138",
+        "mobile": "Canal móvil:",
+        "mobile-number1": "(+57) 318 4665591",
+        "mobile-number2": "(+57) 315 26658170",
+        "mail": "Correo electrónico:",
+        "e-mail": "comunicaciones@agrodatai.com",
+        "online": "Mesa de ayuda On line:",
+        "button": "Accede aquí"
+      }
+    }
+  },
+  "footer": {
+    "own-product": "Un producto de:",
+    "nav": {
+      "option1": "Inicio",
+      "option2": "¿Quiénes Somos?",
+      "option3": "Soluciones",
+      "option4": "Noticias",
+      "option5": "Soporte"
+    },
+    "legal": {
+      "title": "Información de interés:",
+      "terms": "Términos y condiciones",
+      "policies": "Política de tratamiento de datos",
+      "authorization": "Autorización de tratamiento de datos",
+      "warning": "Advertencia legal Don Tulio"
+    }
+  },
+  "don-tulio": {
+    "message": "Hola soy Don Tulio, tu asesor agropecuario."
+  }
+}

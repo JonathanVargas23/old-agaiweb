@@ -1,0 +1,5 @@
+# [START runtime]
+runtime: nodejs16
+# service: landing
+service: landing-agrodatai-prod
+# [END runtime]

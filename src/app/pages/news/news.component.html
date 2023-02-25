@@ -1,0 +1,26 @@
+<section class="main">
+    <div class="content animate__animated animate__fadeIn">
+        <div class="text wow animate__animated animate__fadeInLeft">
+            <h3>{{ 'news.main.title' | translate }}</h3>
+            <h1>{{ 'news.main.description' | translate }}</h1>
+        </div>
+        <div class="image">
+            <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/imagen-noticias.png" alt="Imagen Agrodat AI Noticias del agro" srcset="">
+        </div>
+    </div>
+</section>
+
+<!-- <div  class="gif-container"> -->
+<div *ngIf="showLoading" class="gif-container">
+    <img src="https://storage.googleapis.com/front-agrodatai/agrodatai/img/gif.gif" alt="Gif Agrodat Agro Colombia ">
+</div>
+
+<div *ngIf="noData" class="noData">
+    <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Don-ttulio-news.jpg" alt="Don Tulio News" srcset="">
+</div>
+
+<app-card [news]="news"></app-card>
+
+<div *ngIf="news.length > 0" class="btn-load-news">
+    <button class="button load" (click)="getNews()">{{ !isLoad? ('news.main.button' | translate) : ('news.main.button-loading' | translate) }}</button>
+</div>

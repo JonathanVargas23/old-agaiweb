@@ -1,0 +1,238 @@
+{
+  "header": {
+    "1": "Home",
+    "2": "About us",
+    "3": "Solutions",
+    "4": "News",
+    "5": "Support",
+    "6": "Sign in",
+    "7": "Blog"
+  },
+  "home": {
+    "main": {
+      "title": "Better information, better decisions in agribusiness.",
+      "description": "AgrodatAi is a technological platform that offers information from the agricultural sector in Colombia, allowing any of the actors involved in agriculture and livestock business to make better decisions, promote connections and manage knowledge. This is motivated to strengthen the competitiveness and profitability of their processes and companies, according to their role, their location, and their  products.",
+      "button": "Sign in here",
+      "buttonRegister": "Sign up now"
+    },
+    "banner": {
+      "subtext": "Learn more"
+    },
+    "mobile": {
+      "title": "AgrodatAi Mobile",
+      "subtitle1": "In the palm of your hand",
+      "descripcion1": "Information is updated in real-time and is available with a single click.",
+      "subtitle2": "Agribusiness data",
+      "descripcion2": "Recommendations and data to make better decisions and improve agricultural technology.",
+      "subtitle3": "The best experience",
+      "descripcion3": "An interface designed for all participants  in the agrobusiness.",
+      "button": "Download the app here"
+    },
+    "slides": {
+      "more": "Learn more",
+      "section1": {
+        "item": "01",
+        "title": "Dynamic Platform",
+        "description": "Our platform aims to support farmers , industries, traders,  supply chain companies, banks, insurance companies , investors, government, professionals, and research centers."
+      },
+      "section2": {
+        "item": "02",
+        "title": "The best option for the sale of agricultural products",
+        "description": "Optimizes the sale price of agricultural products according to their location and their transportation cost."
+      }
+    },
+    "allies": {
+      "title": "Our partners"
+    }
+  },
+  "about": {
+    "main": {
+      "title": "How did AgrodatAi come up?",
+      "description": "AgrodatAi is a Servinformación and SFA CEBAR spin-off, created to develop a digital platform for the Colombian agricultural sector.",
+      "slogan": "Better information, better decisions in agribusiness."
+    },
+    "servinformacion": {
+      "description": "Servinformación is a company founded in 1999,  focused on geographic information systems, solutions in mobility and data collection."
+    },
+    "CEBAR": {
+      "description": "SFA CEBAR, founded  in 1999, has a  long and wide experience in financial solutions and agribusiness and risk management, for the agricultural  sector."
+    },
+    "more": "Learn more"
+  },
+  "news": {
+    "main": {
+      "title": "Agricultural and livestock news",
+      "description": "Stay up to date with the agricultural and livestock sector*",
+      "button": "Load more",
+      "button-loading": "Loading"
+    }
+  },
+  "solutions": {
+    "main": {
+      "title": "Solutions for agribusiness",
+      "description": "Our solutions are focused on agricultural and livestock products. We also consider the geographical location and the needs of your business."
+    },
+    "skills": {
+      "title1": "Artificial intelligence",
+      "title2": "Internet of things for agribusiness companies",
+      "title3": "Best agricultural technologies",
+      "title4": "Public, private, and own databases",
+      "title5": "Market potential identification",
+      "title6": "Real-time and mobile consultation"
+    },
+    "solutions": {
+      "solutions1": "Artificial intelligence",
+      "description1": "We use artificial intelligence to forecast agricultural and livestock products prices, crop recommendations, notifications, and alerts.",
+      "solutions2": "Internet of things for agribusiness companies",
+      "description2": "Our solutions respond  to the needs of your business.",
+      "solutions3": "Best agricultural technologies",
+      "description3": "Recommendations for the best agricultural and livestock technologies.",
+      "solutions4": "Public and private databases.",
+      "description4": "Ordering, processing, targeting, and interoperation of agricultural and livestock information bases",
+      "solutions5": "Market potential",
+      "description5": "Information on supply and demand for agricultural and livestock products, inputs, technology, credit and insurance.",
+      "solutions6": "Real-time and mobile consultation",
+      "description6": "Updated information in real time and available for offline consultation through text messages and instant messaging services"
+    }
+  },
+  "contact": {
+    "info": {
+      "title": "Do you want to know more?",
+      "description": "Sign up and get to know the valuable information we have for your business.",
+      "button": "Sign up now"
+    },
+    "second": {
+      "question_register": "Are you an agricultural producer?",
+      "title": "Do you want to know more?",
+      "description1": "If you need personalized attention, send us your info, and we will contact you soon.",
+      "description2": "Sign up and get to know the valuable information we have for your business.",
+      "button": "Sign up now",
+      "buttonRegister": "Sign up for free"
+    },
+    "form": {
+      "title": "Contact us",
+      "description": "If you need personalized attention, send us your info, and we will contact you soon.",
+      "placeholderName": "Name",
+      "validator1": "The name field is required",
+      "placeholderEmail": "Email",
+      "validator2": "The email fied is required",
+      "validator3": "Invalid email",
+      "placeholderMessage": "Message",
+      "validator4": "The message is required",
+      "button": "Send",
+      "button-sending": "Sending",
+      "message1": "Message sent",
+      "message2": "Failed to send message"
+    }
+  },
+  "blog": {
+    "main": {
+      "title": "Blog AgrodatAi",
+      "description": "¡Entérate de las últimas novedades del sector agro!"
+    },
+    "seccions": {
+      "one": {
+        "title": "Publicaciones Destacadas",
+        "sliderOne": {
+          "title": "¿La lluvia puede beneficiar algunos cultivos en Colombia?"
+        },
+        "sliderTwo": {
+          "title": "Exportaciones agropecuarios tocaron cifras record en 2021, tras crecimiento de 19.9%"
+        }
+      },
+      "two": {
+        "primaryTitle": "Publicaciones",
+        "suggestion": {
+          "cardOne": {
+            "textOne": "Paute con nosotros",
+            "textTwo": "Pregunte por nuestros planes"
+          },
+          "cardTwo": {
+            "textOne": "Una app para el sector agropecuario",
+            "textTwo": "Descargar"
+          }
+        },
+        "previousLabel":"Prev",
+        "nextLabel":"Next"
+      },
+      "three": {
+        "textOne": "Suscríbete a nuestro blog",
+        "textTwo": "Subscribirme",
+        "placeholderEmail": "E-mail",
+        "errorEmail" : "Invalid e-mail address",
+        "existEmail" : "The e-mail address has already been registered",
+        "sucessEmail" : "Successful subscription!"
+      }
+    },
+    "slides": {
+      "more": "Learn more",
+      "section1": {
+        "item": "01",
+        "title": "Dynamic Platform",
+        "description": "Our platform aims to support farmers , industries, traders,  supply chain companies, banks, insurance companies , investors, government, professionals, and research centers."
+      },
+      "section2": {
+        "item": "02",
+        "title": "The best option for the sale of agricultural products",
+        "description": "Optimizes the sale price of agricultural products according to their location and their transportation cost."
+      }
+    },
+    "viewBlog": {
+      "section1":{
+        "title": "We invite you to share this article!"
+
+      },
+      "section2":{
+        "title": "You might also be interested in:"
+      },
+      "section3":{
+        "slider1": {
+          "text1": "Stay informed with Don Tulio",
+          "text2": "your virtual farm advisor",
+          "text3": "Chat with Don Tulio"
+        },
+        "slider2": {
+          "text1": "Download our app and register",
+          "text2": "FOR FREE AS A PRODUCER"
+        }
+      }
+    }
+  },
+  "support": {
+    "main": {
+      "title": "Need help? Contact us",
+      "subtitle": "Call us or write to us and we will gladly assist you.",
+      "channels": {
+        "phone": "Telephone:",
+        "phone-number": "(+57) 256 2030 Ext 138",
+        "mobile": "Mobile:",
+        "mobile-number1": "(+57) 318 4665591",
+        "mobile-number2": "(+57) 315 26658170",
+        "mail": "E-mail:",
+        "e-mail": "comunicaciones@agrodatai.com",
+        "online": "Help On line:",
+        "button": "Access here"
+      }
+    }
+  },
+  "footer": {
+    "own-product": "A product by:",
+    "nav": {
+      "option1": "Home",
+      "option2": "About us",
+      "option3": "Solutions",
+      "option4": "News",
+      "option5": "Support"
+    },
+    "legal": {
+      "title": "Learn more:",
+      "terms": "Terms and conditions",
+      "policies": "Data policy",
+      "authorization": "Data using authorization",
+      "warning": "Don Tulio’s legal notice"
+    }
+  },
+  "don-tulio": {
+    "message": "Hi, I'm Don Tulio, your technical advisor"
+  }
+}

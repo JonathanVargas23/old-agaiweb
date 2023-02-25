@@ -1,0 +1,89 @@
+
+<div id="footer" class="footer wow animate__animated animate__fadeIn">
+  <div class="flex-container">
+    <div class="redes">
+      <div class="icons-redes">
+        <img (click)="go('https://web.facebook.com/Agrodat-Ai-105286880869145')" [src]="imgs.facebook" alt="AgrodatAi Icon Facebook" srcset="">
+        <img (click)="go('https://api.whatsapp.com/send?phone=12562420106&text=Hola')" [src]="imgs.whatsapp" alt="AgrodatAi Icon Whatsapp" srcset="">
+        <img (click)="go('https://co.linkedin.com/company/agrodataai')" [src]="imgs.linkedin" alt="AgrodatAi Icon Linkedin" srcset="">
+        <img (click)="go('https://www.instagram.com/agrodatai')" [src]="imgs.instagram" alt="AgrodatAi Icon Instagram" srcset="">
+      </div>
+      <br>
+      <div class="nav">
+        <a routerLink="/home">{{ 'footer.nav.option1' | translate  }}</a>
+        <a routerLink="/about-us">{{ 'footer.nav.option2' | translate  }}</a>
+        <a routerLink="/solutions">{{ 'footer.nav.option3' | translate  }}</a>
+        <a *ngIf="_ui.lang == 'es'" routerLink="/news">{{ 'footer.nav.option4' | translate  }}</a>
+        <a routerLink="/support">{{ 'footer.nav.option5' | translate  }}</a>
+      </div>
+      <div class="legal">
+        <p>{{ 'footer.legal.title' | translate  }}</p>
+        <div>
+          <a target="_blank" href="https://storage.googleapis.com/repositorio_agrodata/legal/T%C3%89RMINOS%20Y%20CONDICIONES%20DE%20USO%20AGRODATAI.pdf">
+            {{ 'footer.legal.terms' | translate  }}
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://storage.googleapis.com/repositorio_agrodata/legal/POLITICA%20DE%20TRATAMIENTO%20DE%20DATOS%20AGRODATAI.pdf">
+            {{ 'footer.legal.policies' | translate  }}
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://storage.googleapis.com/repositorio_agrodata/legal/AUTORIZACI%C3%93N%20PARA%20EL%20TRATAMIENTO%20DE%20DATOS%20PERSONALES.pdf">
+            {{ 'footer.legal.authorization' | translate  }}
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://storage.googleapis.com/repositorio_agrodata/legal/ADVERTENCIA%20LEGAL%20DON%20TULIO%20TU%20ASESOR%20AGROPECUARIO.pdf">
+            {{ 'footer.legal.warning' | translate  }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="logos">
+      <img class="agrodat" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/logos/--logo-main.svg" alt="Logo AgrodatAi" srcset="">
+      <p>{{ 'footer.own-product' | translate  }}</p>
+      <img (click)="go('https://servinformacion.com/')" class="servi" [src]="imgs.servi" alt="Icon Servinformacion" />
+      <img (click)="go('http://www.cebar.net/')" class="cebar" [src]="imgs.cebar" alt="Icono SFA" />
+    </div>
+  </div>
+</div>
+
+<div class="footer-mobile wow animate__animated animate__fadeIn">
+  <div class="flex-container">
+    <div class="redes">
+      <img [src]="imgs.facebook" (click)="go('https://web.facebook.com/Agrodat-Ai-105286880869145')"  alt="AgrodatAi Icon Facebook" srcset="">
+      <img [src]="imgs.whatsapp" (click)="go('https://api.whatsapp.com/send?phone=12562420106&text=Hola')" alt="AgrodatAi Icon Whatsapp" srcset="">
+      <img [src]="imgs.linkedin" (click)="go('https://co.linkedin.com/company/agrodataai')" alt="AgrodatAi Icon Linkedin" srcset="">
+      <img [src]="imgs.instagram" (click)="go('https://www.instagram.com/agrodatai')" alt="AgrodatAi Icon Instagram" srcset="">
+    </div>
+    <div class="nav">
+      <a routerLink="/home">{{ 'footer.nav.option1' | translate  }}</a>
+      <a routerLink="/about-us">{{ 'footer.nav.option2' | translate  }}</a>
+      <a routerLink="/solutions">{{ 'footer.nav.option3' | translate  }}</a>
+      <a *ngIf="_ui.lang == 'es'" routerLink="/news">{{ 'footer.nav.option4' | translate  }}</a>
+      <a routerLink="/support">{{ 'footer.nav.option5' | translate  }}</a>
+    </div>
+    <div class="legal">
+      <p>{{ 'footer.own-product' | translate  }}</p>
+      <div>
+        <a target="_blank" href="https://storage.googleapis.com/repositorio_agrodata/legal/T%C3%89RMINOS%20Y%20CONDICIONES%20DE%20USO%20AGRODATAI.pdf">{{ 'footer.legal.terms' | translate  }}</a>
+      </div>
+      <div>
+        <a target="_blank" href="https://storage.googleapis.com/repositorio_agrodata/legal/POLITICA%20DE%20TRATAMIENTO%20DE%20DATOS%20AGRODATAI.pdf">{{ 'footer.legal.policies' | translate  }}</a>
+      </div>
+      <div>
+        <a target="_blank" href="https://storage.googleapis.com/repositorio_agrodata/legal/AUTORIZACI%C3%93N%20PARA%20EL%20TRATAMIENTO%20DE%20DATOS%20PERSONALES.pdf">{{ 'footer.legal.authorization' | translate  }}</a>
+      </div>
+      <div>
+        <a target="_blank" href="https://storage.googleapis.com/repositorio_agrodata/legal/ADVERTENCIA%20LEGAL%20DON%20TULIO%20TU%20ASESOR%20AGROPECUARIO.pdf">{{ 'footer.legal.warning' | translate  }}</a>
+      </div>
+    </div>
+    <div class="logos">
+      <img class="agrodat" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/logos/--logo-main.svg" alt="Logo AgrodatAi" srcset="">
+      <p>{{ 'footer.legal.title' | translate  }}</p>
+      <img (click)="go('http://www.cebar.net/')" class="cebar" [src]="imgs.cebar" alt="Icon SFA" />
+      <img (click)="go('https://servinformacion.com/')" class="servi" [src]="imgs.servi" alt="Icon Servinformacion" />
+    </div>
+  </div>
+</div>

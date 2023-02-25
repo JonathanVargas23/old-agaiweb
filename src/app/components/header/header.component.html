@@ -1,0 +1,60 @@
+<header id="header">
+    <div class="contenedor">
+    <img [ngClass]="{'logo animate__animated animate__fadeIn': !isSolutions && !isHome, 'logo-solutions animate__animated animate__fadeIn': isSolutions || isHome}" [src]="image" alt="Logo Agrodat IA">
+        <nav [ngClass]="{'white': !isHome && !isSolutions, 'green': isHome || isSolutions}">
+            <a routerLink='/home' routerLinkActive="activo">{{ 'header.1' | translate }}</a>
+            <a routerLink="/about-us" routerLinkActive="activo">{{ 'header.2' | translate }}</a>
+            <a routerLink="/solutions" routerLinkActive="activo">{{ 'header.3' | translate }}</a>
+            <a *ngIf="_ui.lang == 'es'" routerLink="/news" routerLinkActive="activo">{{ 'header.4' | translate }}</a>
+            <!-- <a routerLink="/blog" routerLinkActive="activo">{{ 'header.7' | translate }}</a> -->
+            <a routerLink='/support' routerLinkActive="activo">{{ 'header.5' | translate }}</a>
+            <a (click)="registerEvent()" href="https://portal.agrodatai.com/" target="_blank" class="button enter">{{ 'header.6' | translate }}</a>
+            <div class="Item__languages dropdown" *ngIf="_ui.lang">
+                <img [src]="_ui.lang === 'es' ? 'https://storage.googleapis.com/front-agrodatai/flags_v2/col.svg' : _ui.lang==='en' ?'https://storage.googleapis.com/front-agrodatai/flags_v2/usa.svg': '' "
+                    alt="Icon Lang" />
+                <div class="Item__lang" [ngClass]="{'color-white': !isHome && !isSolutions}">
+                    {{_ui.lang?.toUpperCase()}}
+                </div>
+
+                <div class="dropdown-content">
+                    <div class="Item__languages--es with-flag" (click)="changeLang('es')">
+                        <img [src]="'https://storage.googleapis.com/front-agrodatai/flags_v2/col.svg'" alt="Icon Lang" />
+                        <h6>ES</h6>
+                    </div>
+                    <div class="Item__languages--en with-flag" (click)="changeLang('en')">
+                        <img [src]="'https://storage.googleapis.com/front-agrodatai/flags_v2/usa.svg'" alt="Icon Lang" />
+                        <h6>EN</h6>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div (click)="menuOpen()" class="icon-menu" [ngClass]="{'icon-cambio': isSolutions || isHome}">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
+    </div>
+
+    <div id="myLinks">
+        <a (click)="menuOpen()" routerLink='/home' routerLinkActive="activo">{{ 'header.1' | translate }}</a>
+        <a (click)="menuOpen()" routerLink="/about-us" routerLinkActive="activo">{{ 'header.2' | translate }}</a>
+        <a (click)="menuOpen()" routerLink="/solutions" routerLinkActive="activo">{{ 'header.3' | translate }}</a>
+        <!-- <a  (click)="menuOpen()" routerLink="/blog" routerLinkActive="activo">{{ 'header.7' | translate }}</a> -->
+        <a *ngIf="_ui.lang == 'es'" (click)="menuOpen()" routerLink="/news" routerLinkActive="activo">{{ 'header.4' | translate }}</a>
+        <a (click)="menuOpen()" routerLink="/support" routerLinkActive="activo">{{ 'header.5' | translate }}</a>
+        <div class="Item__languages dropdown" *ngIf="_ui.lang">
+            <img  [src]="_ui.lang === 'es' ? 'https://storage.googleapis.com/front-agrodatai/flags_v2/col.svg' : _ui.lang==='en' ?'https://storage.googleapis.com/front-agrodatai/flags_v2/usa.svg': '' "
+                alt="Icon Lang" />
+            <div class="Item__lang color-white">{{ _ui.lang?.toUpperCase() }}</div>
+            <div class="dropdown-content">
+                <div class="Item__languages--es with-flag" (click)="changeLang('es')">
+                    <img [src]="'https://storage.googleapis.com/front-agrodatai/flags_v2/col.svg'" alt="Icon Lang" />
+                    <h6>ES</h6>
+                </div>
+                <div class="Item__languages--en with-flag" (click)="changeLang('en')">
+                    <img [src]="'https://storage.googleapis.com/front-agrodatai/flags_v2/usa.svg'" alt="Icon Lang" />
+                    <h6>EN</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

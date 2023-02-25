@@ -1,0 +1,92 @@
+<section id="contact" class="contact wow animate__animated animate__fadeIn">
+
+    <div class="one">
+        <div class="Contact__seccion_one">
+            <div class="Seccion__one_img"> <img
+                    src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/contact/Don%20Tulio%20sombrero.svg"
+                    alt="Image don tulio agro"> </div>
+            <div class="Seccion__one_text">
+                <div>
+                    <p>{{ 'contact.second.question_register' | translate }}</p>
+                </div>
+                <div> 
+                    <button (click)="go('https://portal.agrodatai.com/', true)" class="button enter">
+                        {{ 'contact.second.buttonRegister' | translate }}
+                    </button> 
+                </div>
+            </div>
+        </div>
+        <div id="second" class="card">
+
+            <div class="container-form">
+                <div class="description">
+                    <div class="text">
+                        <h2>{{ 'contact.second.title' | translate }}</h2>
+                        <p>
+                            {{ 'contact.second.description1' | translate }}
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="text">
+                        <h1>{{ 'contact.form.title' | translate }}</h1>
+                        <p>{{ 'contact.form.description' | translate }}</p>
+                    </div>
+                    <form id="form" [formGroup]="contactForm" (ngSubmit)="sendForm()">
+                        <input formControlName="name" type="text"
+                            placeholder="{{ 'contact.form.placeholderName' | translate  }}" />
+                        <span class="error"
+                            *ngIf="contactForm.controls['name'].errors?.['required'] && contactForm.controls['name'].touched">
+                            {{ 'contact.form.validator1' | translate }}
+                        </span>
+                        <input formControlName="email" type="email"
+                            placeholder="{{ 'contact.form.placeholderEmail' | translate  }}" />
+                        <span class="error"
+                            *ngIf="contactForm.controls['email'].errors?.['required'] && contactForm.controls['email'].touched">
+                            {{ 'contact.form.validator2' | translate }}
+                        </span>
+                        <span class="error"
+                            *ngIf="contactForm.controls['email'].errors?.['pattern'] && contactForm.controls['email'].touched">
+                            {{ 'contact.form.validator3' | translate }}
+                        </span>
+                        <input formControlName="message" type="text"
+                            placeholder="{{ 'contact.form.placeholderMessage' | translate  }}" />
+                        <span class="error"
+                            *ngIf="contactForm.controls['message'].errors?.['required'] && contactForm.controls['message'].touched">
+                            {{ 'contact.form.validator4' | translate }}
+                        </span>
+                        <div class="agrodatai-recaptcha">
+                                                     
+                            <re-captcha 
+                                id="recaptcha" 
+                                name="recaptcha"
+                                [formControlName]="'recaptcha'"     
+                            >
+                            </re-captcha>
+
+                        </div>
+                        <div *ngIf="showMessage" [ngClass]="{'message': true, 'error-message': check}">
+                            <img *ngIf="check"
+                                src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/check-icono.png"
+                                alt="Icon Check" srcset="">
+                            {{ message | translate }}
+                        </div>
+                        <!-- [class.is-invalid]="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)"> -->
+                        <div class="btn-center">
+                            <button [disabled]="disabledButton"
+                                [ngClass]="{'button send': true, 'disabled': !contactForm.valid}" type="submit"
+                                [disabled]="!contactForm.valid">
+                                <div *ngIf="!loading">
+                                    {{ textButton | translate }}
+                                </div>
+                                <div *ngIf="loading" class="loader"></div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

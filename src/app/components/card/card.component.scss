@@ -1,0 +1,244 @@
+
+.news {
+    // height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+    margin-top: 15vh;
+    width: 100%;
+    .card {
+        width: 65%;
+        min-height: 49vh;
+        height: 49vh;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 15px;
+        transition: 0.3s;
+        display: flex;
+        flex-wrap: wrap;
+        .image {
+            width: 40%;
+            height: 100%;
+            border-radius: 15px 0 0 15px;
+            img {
+                // padding-left: 5%;
+                // padding-right: 5%;
+                border-radius: 15px 0 0 15px;
+                max-width: 100%;
+                width: 100%;
+                max-height: 100%;
+                height: 100%;
+            }
+        }
+        // .logo {
+            // padding-left: 10%;
+            // padding-right: 10%;
+        // }
+        .content {
+            width: 60%;
+            height: 100%;
+            // padding: 7%;
+            padding: 4% 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .comillas {
+                position: absolute;
+                opacity: 0.8;
+                top: 40px;
+                left: 25px;
+                height: 100px;
+                width: 100px;
+            }
+            .link-top {
+                position: absolute;
+                right: 8%;
+                top: 8%;
+            }
+            .link-bottom {
+                position: absolute;
+                right: 8%;
+                bottom: 4%;
+            }
+            a {
+                color: var(--morado3) !important;
+                font-family: 'Google Sans';
+                font-weight: 600;
+            }
+            h2 {
+                text-align: left;
+                // padding-left: 10%;
+                padding-right: 10%;
+                color: var(--morado3);
+                font-family: 'Google Sans';
+                font-weight: 600;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                max-height: 100%;
+                max-width: 100%;
+                width: 100%;
+            }
+            p {
+                font-family: 'Google Sans';
+                font-size: 15px;
+                color: #000000;
+                max-height: 100%;
+                max-width: 100%;
+            }
+            
+        }
+    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .news {
+        // height: 90vh;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        .card {
+            width: 85%;
+            // min-height: 70vh;
+            // height: 70vh;
+            min-height: 450px;
+            height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius: 15px;
+            transition: 0.3s;
+            .image {
+                width: 100%;
+                height: 30%;
+                // min-height: 150px;
+                border-radius: 15px 15px 0 0px;
+                img {
+                    border-radius: 15px 15px 0 0px;
+                    max-width: 100%;
+                    width: 100%;
+                    max-height: 100%;
+                    height: 100%;
+                }
+            }
+            .content {
+                width: 100%;
+                height: 70%;
+                // min-height: 30vh;
+                // padding: 8%;
+                padding: 10% 5%;
+                position: relative;
+                word-wrap: break-word;
+                overflow:hidden;
+                
+                .link-top {
+                    position: absolute;
+                    right: 8%;
+                    top: 4%;
+                }
+                .link-bottom {
+                    position: absolute;
+                    right: 8%;
+                    bottom: 4%;
+                }
+                a {
+                    color: var(--morado3) !important;
+                    font-family: 'Google Sans';
+                    font-weight: 600;
+                }
+                h2 {
+                    // margin-top: 5vh;
+                    text-align: left;
+                    // padding-left: 10%;
+                    padding-right: 10%;
+                    color: var(--morado3);
+                    font-family: 'Google Sans';
+                    font-weight: 600;
+                    font-size: 1.0rem;
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+                p {
+                    font-family: 'Google Sans';
+                    font-size: 0.8rem;
+                    color: #000000;
+                    margin-bottom: 5vh;
+                    text-overflow: ellipsis;
+                    word-wrap: break-word;
+                }
+            }
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    }
+
+}
+
+@media only screen and (max-width: 370px) {
+    .news {
+        // height: 90vh;
+        display: flex;
+        justify-content: center;
+        .card {
+            width: 85%;
+            min-height: 100vh;
+            height: 100vh;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius: 15px;
+            transition: 0.3s;
+            .content {
+                width: 100%;
+                height: 70%;
+                min-height: 30vh;
+                padding: 8%;
+                position: relative;
+                word-wrap: break-word;
+                overflow:hidden;
+                
+                .link-top {
+                    position: absolute;
+                    right: 8%;
+                    top: 3%;
+                    font-size: 0.7rem;
+                }
+                .link-bottom {
+                    position: absolute;
+                    right: 8%;
+                    bottom: 3%;
+                    font-size: 0.7rem;
+                }
+                a {
+                    color: var(--morado3) !important;
+                    font-family: 'Google Sans';
+                    font-weight: 600;
+                }
+                h2 {
+                    margin-top: 5vh;
+                    text-align: left;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    color: var(--morado3);
+                    font-family: 'Google Sans';
+                    font-weight: 600;
+                    font-size: 0.9rem;
+                    text-transform: uppercase;
+                }
+                p {
+                    font-family: 'Google Sans';
+                    font-size: 0.7rem;
+                    color: #000000;
+                    margin-bottom: 5vh;
+                    text-overflow: ellipsis;
+                    word-wrap: break-word;
+                }
+            }
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    }
+}

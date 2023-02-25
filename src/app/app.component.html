@@ -1,0 +1,8 @@
+<app-header [image]="image"></app-header>
+
+<router-outlet id="main"></router-outlet>
+
+<app-don-tulio></app-don-tulio>
+
+<app-contact *ngIf="!isSupport && !blog && !viewBlog"></app-contact>
+<app-footer></app-footer>

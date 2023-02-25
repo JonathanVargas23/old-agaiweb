@@ -1,0 +1,108 @@
+<section class="main">
+    <div class="content animate__animated animate__fadeIn">
+        <div class="text wow animate__animated animate__fadeInLeft">
+            <h1>{{ 'home.main.title' | translate  }} </h1>
+            <p>
+                {{ 'home.main.description' | translate  }}
+            </p>
+            <button (click)="go('https://portal.agrodatai.com/', true)" class="button enter">
+                {{ 'home.main.buttonRegister' | translate  }}
+            </button>
+        </div>
+        <div class="image">
+            <img loading="lazy" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/home.png" alt="Imagen agro balance" srcset="">
+        </div>
+    </div>
+</section><br>
+
+<section class="banner">
+    <owl-carousel #banner [options]="slideOptions"  [carouselClasses]="['owl-theme', 'sliding']">
+        <div *ngFor="let banner of banners; index as i" class="card wow animate__animated animate__fadeInUp">
+            <img (click)="redirectBanner(banner.redirect)" class="img-banner" [src]="banner.img" alt="Imagenes banners de agro" srcset="">
+        </div>
+    </owl-carousel>
+</section>
+
+<section class="slide">
+    <owl-carousel #carousel [options]="slideOptions2"  [carouselClasses]="['owl-theme', 'sliding']">
+        <div *ngFor="let slide of slides" class="flex-container">
+            <div class="image wow animate__animated animate__fadeIn">
+                <img [src]="slide.img" alt="Imagenes Informacion Del Agro Colombia" srcset="">
+            </div>
+            <div class="description wow animate__animated animate__fadeIn">
+                <span class="number">
+                    {{ slide.item | translate }}
+                </span>
+                <h1>
+                    {{ slide.title | translate }}
+                </h1> 
+                <p>
+                    {{ slide.description | translate }}
+                </p>
+                <span>
+                   {{ 'home.slides.more' | translate  }}
+                </span>
+                <br>
+                <div class="icons">
+                    <img (click)="prevSlide()" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/espalda.png" alt="Icono Agrodat IA Slider">
+                    <img (click)="prevSlide()"  src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/espalda.png" alt="Icono Agrodat IA Slider">
+                    <img (click)="nextSlide()" style="margin-left: 10px;" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/proximo.png" alt="Icono Agrodat IA Slider next" srcset="">
+                    <img (click)="nextSlide()" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/proximo.png" alt="Icono Agrodat IA Slider Next" srcset="">
+                </div>
+            </div>
+        </div>
+    </owl-carousel>
+</section>
+
+<section class="mobile">
+    <div class="flex-container">
+        <div class="description wow animate__animated animate__fadeInLeft">
+            <h1> {{ 'home.mobile.title' | translate  }}</h1>
+            <div class="items">
+                <h5>
+                    <img style="width: 30px; height: 30px;" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Click.png" alt="Icono Agrodat IA Click" srcset="">
+                    {{ 'home.mobile.subtitle1' | translate  }}
+                </h5>
+                <p> {{ 'home.mobile.descripcion1' | translate  }}</p>
+            </div>
+            <div class="items">
+                <h5>
+                    <img style="width: 30px; height: 30px;" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Datos.png" alt="Icono Agrodat IA Datos Agro" srcset="">
+                    {{ 'home.mobile.subtitle2' | translate  }}
+                </h5>
+                <p> {{ 'home.mobile.descripcion2' | translate  }}</p>
+            </div>
+            <div class="items">
+                <h5>
+                    <img style="width: 30px; height: 30px;" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Datos.png" alt="Icono Agrodat IA Datos Agro" srcset="">
+                    {{ 'home.mobile.subtitle3' | translate  }}
+                </h5>
+                <p> {{ 'home.mobile.descripcion3' | translate  }}</p>
+            </div>
+            <div class="buttons">
+                <button (click)="registerEvent('Botón Descargar App')" (click)="downloadApp()" class="button enter" style="margin-left: 30px;">{{'home.mobile.button' | translate}}</button>
+                <img (click)="registerEvent('Botón Play Store')" (click)="go('https://play.google.com/store/apps/details?id=com.agrodatai.app')" style="width: 100px; float: right; margin-top: 5px; cursor: pointer; margin-right: 15px;" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Descarga-Google-Play.png" alt="Icono Google Play" />
+                <img (click)="registerEvent('Botón App Store')" (click)="go('https://apps.apple.com/us/app/id1523523085')" style="width: 100px; float: right; margin-top: 5px; cursor: pointer;" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Descarga-App-Store.png" alt="Icono App Store"/>
+            </div>
+            <div class="buttons-mobile">
+                <button (click)="registerEvent('Botón Descargar App')" (click)="downloadApp()" class="button enter">{{ 'home.mobile.button' | translate  }} </button>
+                <img (click)="registerEvent('Botón Play Store')" class="img-one" (click)="go('https://play.google.com/store/apps/details?id=com.agrodatai.app')"  src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Descarga-Google-Play.png" alt="Icono Google Play" />
+                <img (click)="registerEvent('Botón App Store')" class="img-two" (click)="go('https://apps.apple.com/us/app/id1523523085')" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Descarga-App-Store.png" alt="Icono App Store"/>
+            </div>
+        </div>
+        <div class="image wow animate__animated animate__fadeIn">
+            <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/modulosmobile.png" alt="Agrodat IA sector agro movil" srcset="">
+        </div>
+    </div>
+</section>
+
+<section class="allies">
+    <h4>{{ 'home.allies.title' | translate  }} </h4>
+    <div class="flex-container">
+        <div class="images wow animate__animated animate__zoomIn" *ngFor="let ally of allies">
+            <img [src]="ally" [ngClass]="{'lacteo': ally.includes('lacteo')}" alt="Imagen Agrodat IA Aliado sector agro">
+        </div>        
+    </div>
+</section>
+
+<app-card [news]="news"></app-card>

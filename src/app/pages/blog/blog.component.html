@@ -1,0 +1,133 @@
+<section class="main">
+  <div class="content animate__animated animate__fadeIn">
+    <div class="text wow animate__animated animate__fadeInLeft">
+      <h1>{{ 'blog.main.title' | translate }} </h1>
+      <p>
+        {{ 'blog.main.description' | translate }}
+      </p>
+    </div>
+    <div class="image">
+      <img loading="lazy"
+        src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/modulos-imagenes.png"
+        alt="Imagen agro balance">
+    </div>
+  </div>
+</section>
+<br>
+<section class="slides" style="background-color: #009A74;">
+  <div style="width: 80%; font-family: Google Sans, Bold; color: white; margin: auto; padding: 20px 0px;">
+    <h2>{{'blog.seccions.one.title' | translate}}</h2>
+    <owl-carousel #carousel [options]="slideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+      <div class="card blog" style="background-color: #009A74; height: auto;" *ngFor="let blog of dataBlogSelected"
+        (click)="goTo(blog[0])">
+        <div class="Card__blog_image">
+          <img [src]="blog[2].src" alt="image blog">
+        </div>
+        <div class="Card__blog_text">
+          <p>{{blog[1].content}}</p>
+        </div>
+        <div class="Card__blog_date">
+          <p>2022-05-01</p>
+        </div>
+      </div>
+
+    </owl-carousel>
+  </div>
+</section>
+
+<section class="Blog__seccion">
+  <div class="Blog__seccion_header">
+    <h2>{{'blog.seccions.two.primaryTitle' | translate}}</h2>
+    <div class="input-wrapper">
+      <input type="text" class="input" placeholder="Search" [formControl]="mySearch">
+      <img *ngIf="!mySearchValue" width="25px"
+        src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/buscar.svg"
+        alt="Icon Search">
+      <span class="close" *ngIf="mySearchValue" (click)="this.mySearch.setValue('')" width="25px"></span>
+    </div>
+  </div>
+  <div class="Blog__container">
+    <div class="Container__listBlog">
+      <div class="Container__listBlog_content">
+        <div class="card blog2" style="background-color: #009A74; height: auto;"
+          *ngFor="let blog of  dataShow | paginate: { itemsPerPage: 4, currentPage: pages }" (click)="goTo(blog[0].id)">
+          <div class="Card__blog_image">
+            <img [src]="blog[2].src" alt="image blog">
+          </div>
+          <div class="Card__blog_text">
+            <p>{{blog[1].content}}</p>
+          </div>
+          <div class="Card__blog_paragraph">
+            <p>{{blog[3].content.substr(0, 210) + "..."}}</p>
+          </div>
+          <div class="Card__blog_date">
+            <p>2022-05-01</p>
+          </div>
+        </div>
+      </div>
+      <div class="Blog__container_notFound" *ngIf="dataShow.length === 0 ">
+        <h3>Nose encontraron resultados</h3>
+      </div>
+      <div class="Blog__seccion_paginator">
+        <pagination-controls class="my-pagination" (pageChange)="pages = $event"
+          previousLabel="{{'blog.seccions.two.previousLabel' | translate}}"
+          nextLabel="{{'blog.seccions.two.nextLabel' | translate}}"></pagination-controls>
+      </div>
+    </div>
+    <div class="Contaniner__suggestion">
+      <div class="Contaniner__suggestion_cardOne" (click)="goToContact()">
+        <div class="Suggestion__container_image">
+          <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/Simbolo-blancoai.svg"
+            alt="Logo blog agrodatIA">
+        </div>
+        <p class="CardTwo__text">{{'blog.seccions.two.suggestion.cardOne.textOne' | translate}}</p>
+        <p class="CardOne__text">{{'blog.seccions.two.suggestion.cardOne.textTwo' | translate}}</p>
+      </div>
+      <div class="Contaniner__suggestion_cardTwo">
+        <p class="CardTwo__text">{{'blog.seccions.two.suggestion.cardTwo.textOne' | translate}}</p>
+        <button (click)="downloadApp()">{{'blog.seccions.two.suggestion.cardTwo.textTwo' | translate}}</button>
+        <div class="CardTwo__containerImg">
+          <img
+            src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/google-play-contorno.png"
+            alt="Google play icon">
+          <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/App-store.png"
+            alt="App store icon">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="Suscribe" style="background-color: #83358A;">
+  <div class="Suscribe__contianer">
+    <div class="Suscribe__image">
+      <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/Don-Tulio-senala.png"
+        alt="Don tulio señala">
+    </div>
+    <div class="Suscribe__text">
+      <h3>{{'blog.seccions.three.textOne' | translate}}</h3>
+      <form id="form" [formGroup]="subscribeForm" (ngSubmit)="sendForm()">
+        <div class="Suscribe__input">
+
+          <input formControlName="email" type="email" name="email"
+            placeholder="{{'blog.seccions.three.placeholderEmail' | translate}}" (change)="this.showMessage = false;">
+          <button [disabled]="disabledButton" [ngClass]="{'button send': true}" type="submit">
+            <div *ngIf="!loading">
+              {{ textButton | translate }}
+            </div>
+            <div *ngIf="loading" class="loader"></div>
+          </button>
+        </div>
+
+      </form>
+      <div style="height: 20px; margin: 10px;" [ngClass]="{'message': true, 'error-message': check}">
+        <img *ngIf="check" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/check-icono.png"
+          alt="Icon Check" srcset="">
+        <span *ngIf="showMessage">
+          {{ message | translate }}
+        </span>
+      </div>
+    </div>
+  </div>
+
+</section>

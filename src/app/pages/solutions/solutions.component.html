@@ -1,0 +1,154 @@
+<section class="main">
+    <div class="content animate__animated animate__fadeIn">
+        <div class="text wow animate__animated animate__fadeInLeft">
+            <h3> {{ 'solutions.main.title' | translate }} </h3>
+            <h1>
+                {{ 'solutions.main.description' | translate }}
+            </h1>
+        </div>
+    </div>
+</section>
+
+<section class="skills">
+    <div class="flex-container">
+        <div class="items wow animate__animated animate__zoomIn" *ngFor="let skill of skills">
+            <img [src]="skill.img" alt="Agrodat AI Skills">
+            <p>
+                {{ skill.title | translate }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="solutions">
+    <div class="solution background-grey">
+        <div class="text wow animate__animated animate__fadeIn">
+            <div class="body">
+                <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Icono-Inteligencia-artificial.png"
+                    alt="Agrodat AI Inteligencia Artificial" />
+                <div class="description">
+                    <h1>
+                        {{ 'solutions.solutions.solutions1' | translate }}
+                    </h1>
+                    <p>
+                        {{ 'solutions.solutions.description1' | translate }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="media ">
+            <video muted="muted" class="video">
+                <source
+                    src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/video/inteligencia-artificial.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="solution reverse">
+        <div class="media ">
+            <video muted="muted" class="video">
+                <source
+                    src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/video/internet-de-las-cosas.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="text wow animate__animated animate__fadeIn">
+            <div class="body">
+                <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Icono-Internet.png"
+                    alt="Icono Agrodat AI Web ">
+                <div class="description">
+                    <h1>
+                        {{ 'solutions.solutions.solutions2' | translate }}
+                    </h1>
+                    <p>{{ 'solutions.solutions.description2' | translate }} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="solution background-grey">
+        <div class="text wow animate__animated animate__fadeIn">
+            <div class="body">
+                <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Icono-Agropecuarias.png"
+                    alt="Icono Agrodat AI Agropecuarias" />
+                <div class="description">
+                    <h1>
+                        {{ 'solutions.solutions.solutions3' | translate }}
+                    </h1>
+                    <p> {{ 'solutions.solutions.description3' | translate }} </p>
+                </div>
+            </div>
+        </div>
+        <div class="media wow animate__animated animate__fadeIn">
+            <video muted="muted" class="video">
+                <source src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/video/mejores-practicas.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="solution reverse">
+        <div class="media wow animate__animated animate__fadeIn">
+            <video muted="muted" class="video">
+                <source src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/video/bases.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="text wow animate__animated animate__fadeIn" style="padding-left: 0;">
+            <div class="body">
+                <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Icono-bases-de-datos.png"
+                    alt="Icono Agrodat AI Base Datos">
+                <div class="description">
+                    <h1>
+                        {{ 'solutions.solutions.solutions4' | translate }}
+                    </h1>
+                    <p> {{ 'solutions.solutions.description4' | translate }} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="solution background-grey">
+        <div class="text wow animate__animated animate__fadeIn">
+            <div class="body">
+                <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Icono-consulta.png"
+                    alt="Icono Agrodat AI Consulta">
+                <div class="description">
+                    <h1>
+                        {{ 'solutions.solutions.solutions5' | translate }}
+                    </h1>
+                    <p> {{ 'solutions.solutions.description5' | translate }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="media wow animate__animated animate__fadeIn">
+            <video muted="muted" class="video">
+                <source src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/video/potencial-mercado.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="solution reverse wow animate__animated animate__fadeIn">
+        <div class="media wow animate__animated animate__fadeIn">
+            <video muted="muted" class="video">
+                <source src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/video/don_tulio.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="text">
+            <div class="body">
+                <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Icono-consulta.png"
+                    alt="Icono Agrodat AI Consulta">
+                <div class="description">
+                    <h1>
+                        {{ 'solutions.solutions.solutions6' | translate }}
+                    </h1>
+                    <p>{{ 'solutions.solutions.description6' | translate }} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

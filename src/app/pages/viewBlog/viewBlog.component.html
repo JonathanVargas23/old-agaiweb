@@ -1,0 +1,125 @@
+<section class="main">
+  <owl-carousel #carousel [options]="slideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+    <div class="main__banner" style="background-color: unset;box-shadow: unset; border: unset; background-clip: unset;">
+      <div class="flex-container">
+        <a (click)="reDirect()" target="_blank">
+          <img
+            src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/banner-por-defecto.png"
+            alt="Agrodat AI Servinformación" srcset="">
+        </a>
+      </div>
+    </div>
+  </owl-carousel>
+</section>
+<section class="Seccion__image">
+  <img [src]="this.dataBlog[4].src" alt="Imagen blog">
+</section>
+<section class="Seccion__text">
+  <div class="Seccion__text_container">
+    <div *ngFor="let blog of this.dataBlog">
+      <h2 *ngIf="blog.type === 'title'">{{this.dataBlog[1].content}}</h2>
+      <div *ngIf="blog.type === 'text'" [innerHTML]="blog.content"></div>
+      <div *ngIf="blog.type === 'text_image_text'">
+        <p [innerHTML]="blog.content"></p>
+        <img class="blog__image" [src]="blog.image" alt="image blog">
+        <span class="blog__image_fuente">{{blog.fuente}}</span>
+        <br>
+        <p [innerHTML]="blog.contentTwo"></p>
+      </div>
+      <div *ngIf="blog.type === 'text_list'">
+        <p [innerHTML]="blog.content"></p>
+        <ol>
+          <li *ngFor="let item of blog.items">{{item}}</li>
+        </ol>
+      </div>
+    </div>
+    <p class="Text__container_title">{{'blog.viewBlog.section1.title' | translate}}</p>
+    <div class="Text__container_icons">
+      <a href="https://www.facebook.com/agrodatai/" target="_blank">
+        <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/FB-verde.svg"
+          alt="Agrodat facebook icon">
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=12562420106&text=Hola" target="_blank">
+        <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/WS-verde.svg"
+          alt="Agrodat facebook icon">
+      </a>
+      <a href="https://www.linkedin.com/company/agrodatai/" target="_blank">
+        <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/LK-verde.svg"
+          alt="Agrodat facebook icon">
+      </a>
+      <a href="https://www.instagram.com/agrodatai/" target="_blank">
+        <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/IG-verde.svg"
+          alt="Agrodat facebook icon">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="Container__listBlog">
+    <h3>{{'blog.viewBlog.section2.title' | translate}}</h3>
+    <div class="Container__listBlog_content">
+      <div class="card blog2" style="cursor: pointer; height: auto;" *ngFor="let blog of  this.dataBlogSelected">
+        <div class="Card__blog_image" (click)="goTo(blog[0])">
+          <img [src]="blog[2].src" alt="image blog">
+        </div>
+        <div class="Card__blog_text">
+          <p>{{blog[1].content}}</p>
+        </div>
+        <div class="Card__blog_paragraph">
+          <p maxlength="10">{{blog[3].content}}</p>
+        </div>
+        <div class="Card__blog_date">
+          <p>2022-05-01</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="slides" style="background-color: #009A74; margin-bottom: unset; ">
+  <owl-carousel #carousel [options]="slideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+    <div class="card" style="background-color: unset;box-shadow: unset; border: unset; background-clip: unset;">
+      <div class="flex-container">
+        <div class="logo">
+          <img
+            src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/Whatsapp-Don-tulio.png"
+            alt="Agrodat AI Servinformación" srcset="">
+        </div>
+        <div class="text">
+          <p>
+            {{'blog.viewBlog.section3.slider1.text1' | translate}}
+          </p>
+          <span>
+            {{'blog.viewBlog.section3.slider1.text2' | translate}}
+          </span>
+          <button class="button know"
+            (click)="goWhatsApp()">
+            {{'blog.viewBlog.section3.slider1.text3' | translate}}</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="card" style="background-color: unset; box-shadow: unset; border: unset; background-clip: unset;">
+      <div class="flex-container">
+
+        <div class="logo" style="margin-top: 0 !important;">
+          <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/celular.png"
+            alt="Agrodat AI Logo SFA" srcset="" style="max-width: 300px;">
+        </div>
+        <div class="text">
+          <p>
+            {{'blog.viewBlog.section3.slider2.text1' | translate}}
+          </p>
+          <span>
+            {{'blog.viewBlog.section3.slider2.text2' | translate}}
+          </span>
+          <button class="button know"
+            (click)="downloadApp()">Descargar</button>
+        </div>
+
+      </div>
+    </div>
+  </owl-carousel>
+</section>

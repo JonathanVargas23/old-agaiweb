@@ -1,0 +1,68 @@
+<section class="main">
+    <div class="content animate__animated animate__fadeIn">
+        <div class="text wow animate__animated animate__fadeInLeft">
+            <h3>{{ 'about.main.title' | translate  }}</h3>
+            <br>
+            <span>
+                {{ 'about.main.description' | translate  }} 
+            </span>
+            <br>
+            <h3>{{ 'about.main.slogan' | translate  }}</h3>
+        </div><br><br>
+        <div class="image">
+            <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/imagen-quienes-somos.png" alt="Agrodat AI Quienes Somos "
+                srcset="">
+        </div>
+    </div>
+</section>
+
+<section class="slides">
+    <owl-carousel #carousel [options]="slideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+        <div class="card">
+            <img class="background" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/about-us/web.jpg"
+                alt="Agrodat AI Sitio Web">
+            <div class="flex-container">
+                <div class="logo">
+                    <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/logo%20servi.png" alt="Agrodat AI Servinformación"  srcset=""> 
+                </div>
+                <div class="text">
+                    <p>
+                        {{ 'about.servinformacion.description' | translate  }}
+                    </p>
+                    <button class="button know" (click)="learnMore('https://servinformacion.com/')">{{ 'about.more' | translate  }}</button>
+                </div>
+                <div (click)="nextSlide()">
+                    <img class="next"
+                        src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/proximo-oscuro.png" alt="Agrodat AI Slider Next"
+                        srcset="">
+                    <img class="next-two"
+                        src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/proximo-oscuro.png" alt="Agrodat AI Next"
+                        srcset="">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="background" src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/about-us/Agro.jpg"
+                alt="Agrodat AI Agro">
+            <div class="flex-container">
+                <div class="logo" style="margin-top: 0 !important;">
+                    <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/logo%20sfa.png" alt="Agrodat AI Logo SFA" srcset="">               
+                </div>
+                <div class="text">
+                    <p>
+                        {{ 'about.CEBAR.description' | translate  }}
+                    </p>
+                    <button class="button know" (click)="learnMore('http://www.cebar.net/')">{{ 'about.more' | translate  }}</button>
+                </div>
+                <div id="previuos" (click)="prevSlide()">
+                    <img class="prev"
+                        src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/agrodatai_img_prev-oscuro.png"
+                        alt="Agrodat AI prev" srcset="">
+                    <img class="prev-two"
+                        src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/agrodatai_img_prev-oscuro.png"
+                        alt="Agrodat AI prev" srcset="">
+                </div>
+            </div>
+        </div>
+    </owl-carousel>
+</section>

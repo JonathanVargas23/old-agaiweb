@@ -1,0 +1,170 @@
+
+
+.footer {
+  background-color: var(--gris);
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .redes {
+      width: 60%;
+      padding-left: 12%;
+      margin-top: 1.6rem;
+      margin-bottom: 1rem;
+      .icons-redes {
+        img {
+          width: 10%; 
+          height: auto;
+          cursor: pointer;
+        }
+      }
+      .nav {
+        a {
+          color: grey !important;
+          margin-right: 10px;
+          font-family: 'Google Sans';
+          font-weight: 800;
+          text-decoration: none;
+         
+        }
+      }
+      .nav {
+        a:hover {
+          color: var(--verde3) !important;
+        }
+      }
+    }
+    .logos {
+      padding-left: 5%;
+      width:40%;
+      text-align: left;
+      .agrodat {
+        width: 44%;
+        height: 85px;
+      }
+      p {
+        color: grey !important;
+        font-family: 'Google Sans';
+        font-weight: 800;
+      }
+      .servi {
+        width: 40%;
+        height: 50px;
+      }
+      .cebar {
+        width: 15%;
+        height: auto;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  p {
+    color: grey !important;
+    font-family: 'Google Sans';
+    font-weight: 800;
+  }
+  div {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    a {
+      color: grey !important;
+      font-family: 'Google Sans';
+      font-weight: 400;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    a:hover {
+      color: var(--verde3) !important;
+    }
+  }
+}
+
+.footer-mobile {
+  display: none;   
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    display: none;
+  }
+  .footer-mobile {
+    background-color: var(--gris);
+    display: block;
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 5vh 0;
+      .redes {
+        text-align: center;
+        img {
+          width: 15%;
+        }
+      }
+      .nav {
+        margin-top: 5vh;
+        a {
+          color: grey !important;
+          margin-right: 5px;
+          font-family: 'Google Sans';
+          font-weight: 800;
+        }
+      }
+      .logos {
+        margin-top: 3vh;
+        text-align: center;
+        .agrodat {
+          width: 44%;
+        }
+        p {
+          color: grey !important;
+          font-family: 'Google Sans';
+          font-weight: 800;
+          margin-top: 5px;
+        }
+        .servi {
+          width: 160px;
+          max-height: 100%;
+        }
+        .cebar {
+          width: 70px;
+          height: auto;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+  .legal {
+    justify-content: center;
+    p {
+      text-align: center;
+    }
+    div {
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 600px){
+  .nav{
+    padding: 0px 2rem ;
+    justify-content: center;
+      a{
+        margin-right: 21px !important;
+        text-align: center;
+      }     
+  }
+}
